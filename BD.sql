@@ -19,8 +19,8 @@ CREATE TABLE empleado(
 DROP TABLE IF EXISTS login;
 CREATE TABLE login(
 	id_login INT AUTO_INCREMENT PRIMARY KEY,
-    usuario varchar(50) NOT NULL,
-    pass varchar(40) NOT NULL,
+    usuario varchar(50) NOT NULL unique,
+    pass varchar(100) NOT NULL,
     id_empleado INT,
     FOREIGN KEY (id_empleado) REFERENCES empleado(id_empleado)
 );

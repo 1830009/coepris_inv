@@ -1,6 +1,3 @@
-<?php
-    session_reset();
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,27 +14,25 @@
     <div class="contenedor_login">
         <div class="contenido_login">
             <img src="img/logo-coepris.png" class="logo_login">
-            <h1 class="titulo_login">Iniciar sesión</h1>
+            <h1 class="titulo_login">Recuperar Contraseña</h1>
             <br>
             <form action="validar.php" method="POST" accept-charset="utf-8">
-			<label>Usuario:</label>
+			<label>Contraseña Actual:</label>
             <br><br>
-            <input type="text" name="user" placeholder="Ingrese usuario" required>
+            <input type="text" name="usuario" placeholder="Ingrese usuario">
             <br><br>
             <label>Contraseña:</label>
             <br><br>
-            <input type="password" name="pass" placeholder="Ingrese contraseña"  minlength="4" required>
+            <input type="password" name="pass"placeholder="Ingrese contraseña">
             <br>
             <input type="submit" value="Ingresar" class="boton_login">
 			</form>
             <br>
-            <!--<div class="recuperar">
+            <div class="recuperar">
             <label ><a href="recuperar_pass.php">Recuperar Contraseña</a></label>
-            </div>-->
+            </div>
         </div>
-        <div class="imagen_login">
-            <img src="img/coepris.PNG" class="img_coepris">
-        </div>
+    
     </div>
 </body>
 </html>
