@@ -1,0 +1,21 @@
+//Tabla Empleados
+
+INSERT INTO `empleado`( `nombre`, `apellido_pat`, `apelldio_mat`, `rfc`, `email`, `telefono`)
+VALUES ('Ernesto','Ramírez','Cervantes','RACE000608JD8','ernezto8600@gmail.com','8110200177');
+
+INSERT INTO `empleado`( `nombre`, `apellido_pat`, `apelldio_mat`, `rfc`, `email`, `telefono`)
+VALUES ('Alejandro','Lumbreras','Olvera','RFC_Lumbreras','1830007@gmail.com','8342429868');
+
+INSERT INTO `empleado`( `nombre`, `apellido_pat`, `apelldio_mat`, `rfc`, `email`, `telefono`)
+VALUES ('Jonathan Alejandro','Juarez','Hernandez','RFC_Juarez','1830008@gmail.com','8340968987');
+
+//Tabla Login
+
+INSERT INTO `login`(`usuario`, `pass`, `tipo`, `id_empleado`) 
+VALUES ('neto-admin','$2y$10$77.KETAvWqbhcXFh2YzX2Ot17Khd8OLiFjjmVv4Ut6Z7vGi0WmD7m','admin','1');
+
+INSERT INTO `login`(`usuario`, `pass`, `tipo`, `id_empleado`) 
+VALUES ('alex-federal','$2y$10$BHY15WCsjkkgLd0jNoyRCOcNmSezBxwuRJWZyYmZe1VIoP6Z6qIPu','federal','2');
+
+INSERT INTO `login`(`usuario`, `pass`, `tipo`, `id_empleado`) 
+VALUES ('neto-estatal','$2y$10$aoqavtoYa2yHbPciwg3HFOwTfXDgOZSAT4UcBJCulhqODbBGBJ6uO','estatal','3');

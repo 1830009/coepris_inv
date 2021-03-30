@@ -36,7 +36,7 @@
             </div>-->
         </div>
         <div class="imagen_login">
-            <img src="img/coepris.PNG" class="img_coepris">
+            <img src="img/coepris_fondo.PNG" class="img_coepris">
         </div>
     </div>
 </body>

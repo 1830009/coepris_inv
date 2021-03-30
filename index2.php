@@ -13,7 +13,7 @@
 <li><a href="login/./cerrar_sesion.php">Cerrar Sesión</a></li>
     <h1>Bienvenido index 2</h1>
     <?php
-     echo password_hash('ejemplo123',PASSWORD_BCRYPT);
+     echo password_hash('ejemplo',PASSWORD_BCRYPT);
      ?>
 </body>
 </html>
