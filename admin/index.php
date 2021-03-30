@@ -17,10 +17,14 @@
     <h1>Bienvenido a la pagina del ADMIN</h1>
     <li><a href="index2.php">pagina2</a></li>
     <br>
-    <button><a href="entrada.php">+ Entrada</a></button>
-    <br>
-    <button><a href="salida.php">- Salida</a></button>
     <button><a href="Agr_Producto.php">Agregar Producto</a></button>
     <button><a href="Usuarios.php">Administrar Usuarios</a></button>
+    <!-- Generar PDF's de 
+        -FORMATO PARA LEVANTAR INVENTARIO FISICO
+        -	FORMATO PARA REALIZAR LOS VALES DE SALIDA DE ALMACEN CENTRAL EN LAS FORMAS OFICIALES.
+        -	FORMATO DE VALE DE SALIDA DE ALMACEN DE COEPRIS A LOS DIFERENTES DESTINATARIOS, 
+            PROYECTO FEDERAL, A LAS COORDINACIONES, DIRECCIONES, Y OTROS.
+        -	ESCRITO O MEMORANDUM DE PETICION AL COMISIONADO PARA LA COMPRA DE INSUMOS.
+ -->
 </body>
 </html>

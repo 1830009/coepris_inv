@@ -49,4 +49,16 @@ function errorConexion(){
             </html>
             <?php
             }
+            
+            function RegresarIndexFederal(){
+            
+                ?>
+               <html>
+                   <script>
+                   window.alert('La operación fue realizada con Exito!');
+                   window.location.href='/icoepris/federal/index.php';
+                   </script>
+               </html>
+               <?php
+               }
 ?>
