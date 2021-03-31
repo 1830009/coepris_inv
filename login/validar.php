@@ -14,7 +14,8 @@ require('../bd/conectar.php');
 		}
 		else{
 			//$query = 'SELECT 1 AS users FROM login WHERE usuario="'.$user.'" AND pass= "'.password_hash($pass,PASSWORD_BCRYPT).'"';
-			$query = 'SELECT pass,tipo FROM login WHERE usuario="'.$user.'" LIMIT 1';
+			$query = 'SELECT e.id_empleado id,CONCAT(e.nombre," ",e.apellido_pat," ",e.apelldio_mat) nombre, l.pass,l.tipo 
+					FROM login l JOIN empleado e ON e.id_empleado= l.id_empleado WHERE usuario="'.$user.'" LIMIT 1';
 			$res = mysqli_query($conexion,$query) or die('Ha ocurrido un Error al Ejecutar la Consulta');
 			$passwordHASH='';
 			
@@ -24,7 +25,8 @@ require('../bd/conectar.php');
 			if(password_verify($pass,$contra['pass'])){
 				session_start();
 				$valido=true;
-				$_SESSION['usuario']=$user;
+				$_SESSION['usuario']=$contra['nombre'];
+				$_SESSION['id']=$contra['id'];
 				if($contra['tipo']=='admin')
 					header('Location: ../admin/index.php');
 				

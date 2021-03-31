@@ -6,10 +6,11 @@
 		exit;
 	}
 	else{
-		echo $_SESSION['usuario'];
 		if(($_SESSION['usuario']=='')){
 			header('location: /icoepris/login/login.php');
 			exit;
 		}
+		echo '<b>ID:</b> '.$_SESSION['id'];
+		echo '<br> <b>Nombre:</b> '.$_SESSION['usuario'];
 	}
  ?>

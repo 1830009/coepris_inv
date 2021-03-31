@@ -27,7 +27,6 @@ function errorConexion(){
     }
 
     function avisoGuardadoExito(){
-        $_SESSION['usuario']='';
          ?>
         <html>
             <script>

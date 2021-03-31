@@ -20,6 +20,9 @@
                         $query= 'UPDATE `proyecto_federal` SET `cantidad`= (cantidad -'.$cantRestar.') 
                             WHERE id_federal="'.$_POST['nombre'].'"';
                         $res = mysqli_query($conexion,$query) or die('Ha ocurrido un Error al Ejecutar la Consulta');
+                        $query= 'INSERT INTO `fecha_salida`(`cantidad`, `tabla`, `id_producto`, `id_empleado`)
+                        VALUES ("'.$cantRestar.'","proyecto_federal",'.$_POST['nombre'].','.$_SESSION['id'].')';
+                        $res = mysqli_query($conexion,$query) or die('Ha ocurrido un Error al Ejecutar la Consulta');
                         RegresarIndexFederal();
                         //Ir a la pag INDEX de Federal
                     }

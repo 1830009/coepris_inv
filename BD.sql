@@ -43,7 +43,6 @@ CREATE TABLE fecha_salida(
     fecha_hora timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
     cantidad INT NOT NULL,
     tabla varchar(50) NOT NULL,
-    empleado varchar(100) NOT NULL,
     id_producto INT,
     id_empleado INT,
     FOREIGN KEY(id_empleado) REFERENCES empleado(id_empleado)

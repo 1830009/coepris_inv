@@ -11,7 +11,7 @@
             else{
                 $query = 'INSERT INTO '.$_POST['tabla'].' (nombre, cantidad, unidad, marca, descripcion) 
                 VALUES("'.$_POST['nombre'].'",0,"'.$_POST['unidad'].'","'.$_POST['marca'].'","'.$_POST['descripcion'].'")';
-                echo $query;
+                
                 $res = mysqli_query($conexion,$query) or die('Ha ocurrido un Error al Ejecutar la Consulta');
                 
                 if($res){
